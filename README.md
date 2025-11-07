@@ -1,1 +1,22 @@
-# download_from_youtube.py
+# Бесплатный не комерческий скрипт позволяющий скачивать видео с ютуба
+.exe фал ищите в realeses
+
+ГАЙД ПО СБОРКЕ .py ФАЙЛА
+
+1) создайте папку с любым названием без пробелов, латиницы и спец символов
+откройте cmd и пропишите `cd ПУТЬ_ДО_ПАПКИ`
+
+2) Скачайте Python если его у вас нету, пропишите `python -m venv venv`
+
+3) Пропишите `venv\Scripts\activate`
+
+4) И `pip install yt-dlp pyinstaller`
+
+5) Далее в созданую папку на первом шаге и скачайте FFmpeg с репозитория https://github.com/FFmpeg/FFmpeg/commit/222127418b
+
+6) `pyinstaller --onefile --noconfirm --add-binary "ПУТЬ_ДО_ПАПКИ\ffmpeg.exe;." --add-binary "ПУТЬ_ДО_ПАПКИ\ffprobe.exe;." ПУТЬ_ДО_ПАПКИ\download_youtube.py`
+
+После долгой загрузке в папке появится папка dist в которой будет собраный exe файл.
+
+# ВАЖНО!
+ЗАМЕНИТЕ ВСЕ `ПУТЬ_ДО_ПАПКИ` НА ПУТЬ ДО ВАШЕЙ ПАПКИ ( пример: `C:\Code\Paths\` )
