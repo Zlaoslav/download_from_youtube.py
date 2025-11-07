@@ -12,7 +12,7 @@
 
 4) И `pip install yt-dlp pyinstaller`
 
-5) Далее в созданую папку на первом шаге и скачайте FFmpeg с репозитория https://github.com/FFmpeg/FFmpeg/commit/222127418b
+5) Далее в созданую папку на первом шаге и скачайте FFmpeg с репозитория https://github.com/FFmpeg/FFmpeg/
 
 6) `pyinstaller --onefile --noconfirm --add-binary "ПУТЬ_ДО_ПАПКИ\ffmpeg.exe;." --add-binary "ПУТЬ_ДО_ПАПКИ\ffprobe.exe;." ПУТЬ_ДО_ПАПКИ\download_youtube.py`
 
